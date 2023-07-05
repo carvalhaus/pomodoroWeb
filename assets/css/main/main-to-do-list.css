@@ -1,0 +1,43 @@
+.to-dos {
+  height: 100%;
+  padding: 1.5rem 0;
+}
+
+.to-dos ul li {
+  color: var(--zinc-500);
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.to-dos ul li:first-child {
+  padding: 0;
+}
+
+.add-task {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  background: var(--zinc-800);
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+input[type="text"]::placeholder {
+  color: var(--zinc-600);
+  font-size: 0.875rem;
+}
+
+.add-btn {
+  background: var(--lime-500);
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--zinc-50);
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}

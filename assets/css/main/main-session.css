@@ -1,0 +1,103 @@
+.session > article p {
+  font-size: 0.875rem;
+}
+
+.focus {
+  align-items: center;
+  background-color: var(--lime-500-10);
+  border: 2px solid var(--lime-500);
+  border-radius: 0.25rem;
+  display: flex;
+  font-weight: 600;
+  height: 1.813rem;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  width: 5.063rem;
+}
+
+.focus p {
+  color: var(--lime-500);
+}
+
+.short-pause {
+  align-items: center;
+  background-color: var(--amber-500-10);
+  border: 2px solid var(--amber-500);
+  border-radius: 0.25rem;
+  display: flex;
+  font-weight: 600;
+  height: 1.813rem;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  width: 8.188rem;
+}
+
+.short-pause p {
+  color: var(--amber-500);
+}
+
+.long-pause {
+  align-items: center;
+  background-color: var(--cian-500-10);
+  border: 2px solid var(--cian-500);
+  border-radius: 0.25rem;
+  display: flex;
+  font-weight: 600;
+  height: 1.813rem;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  width: 8.438rem;
+}
+
+.long-pause p {
+  color: var(--cian-500);
+}
+
+.hidden {
+  display: none;
+}
+
+.current-mode {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.next-mode {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.timer {
+  align-items: center;
+  align-self: center;
+  border: 0.75rem solid var(--lime-500);
+  border-radius: 50%;
+  display: flex;
+  font-family: "Rajdhani", sans-serif;
+  height: 14rem;
+  justify-content: center;
+  padding: 4.438rem 3.188rem;
+  width: 14rem;
+}
+
+.timer .minutes {
+  color: var(--zinc-100);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.focus-time {
+  border: 0.75rem solid var(--lime-500);
+}
+
+.short-pause-time {
+  border: 0.75rem solid var(--amber-500);
+}
+
+.long-pause-time {
+  border: 0.75rem solid var(--cian-500);
+}
