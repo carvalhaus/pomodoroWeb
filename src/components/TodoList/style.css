@@ -1,0 +1,19 @@
+.todo {
+  width: 48%;
+  border: var(--section-border);
+  border-radius: 0.75rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.todo_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--section-border);
+}
+
+.todo_header > div > h3 {
+  font-weight: 400;
+}

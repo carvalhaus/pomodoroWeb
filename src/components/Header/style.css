@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
+}
