@@ -1,11 +1,16 @@
 import { FiRefreshCcw } from "react-icons/fi";
 import SectionButton from "../SectionButton/SectionButton";
 import "./style.css";
+import Badge from "../Badge/Badge";
+import { useState } from "react";
+import Timer from "../Timer/Timer";
 
 function Session() {
-  function onRefreshBtnClick(e) {
+  const [count, setCount] = useState(0);
+
+  function onRefreshBtnClick(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
-    console.log("REFRESHED");
+    setCount(0);
   }
 
   return (
@@ -22,6 +27,28 @@ function Session() {
         >
           <FiRefreshCcw />
         </SectionButton>
+      </div>
+
+      <div className="session_content">
+        <div className="content_item">
+          <div>
+            <h4>Modo atual:</h4>
+            <p className="subtitle">Cíclo atual do cronômetro</p>
+          </div>
+
+          <Badge count={count} />
+        </div>
+
+        <div className="content_item">
+          <div>
+            <h4>Próximo modo:</h4>
+            <p className="subtitle">Qual cíclo será ativado</p>
+          </div>
+
+          <Badge count={count + 1} />
+        </div>
+
+        <Timer />
       </div>
     </section>
   );
