@@ -1,0 +1,10 @@
+.list_item {
+  align-items: center;
+  display: flex;
+  gap: 0.25rem;
+  font-weight: 500;
+}
+
+.checked {
+  text-decoration: line-through;
+}

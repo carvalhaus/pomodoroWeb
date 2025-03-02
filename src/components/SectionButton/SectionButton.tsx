@@ -1,5 +1,5 @@
 import "./style.css";
-import { ReactNode } from "react";
+import { ForwardedRef, forwardRef, ReactNode } from "react";
 
 interface SectionButtonProps {
   children: ReactNode;
@@ -7,12 +7,17 @@ interface SectionButtonProps {
   title: string;
 }
 
-function SectionButton({ children, onClick, title }: SectionButtonProps) {
-  return (
-    <button className="section_btn" onClick={onClick} title={title}>
-      {children}
-    </button>
-  );
-}
+const SectionButton = forwardRef<HTMLButtonElement, SectionButtonProps>(
+  function SectionButton(
+    { children, onClick, title },
+    ref: ForwardedRef<HTMLButtonElement>
+  ) {
+    return (
+      <button className="section_btn" onClick={onClick} title={title} ref={ref}>
+        {children}
+      </button>
+    );
+  }
+);
 
 export default SectionButton;

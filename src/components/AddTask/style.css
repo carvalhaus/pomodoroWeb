@@ -1,0 +1,31 @@
+.add_task {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.add_task > input {
+  flex-grow: 1;
+  border: var(--toogle-theme-button-border);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background: var(--toogle-theme-button-background-color);
+  color: var(--text-color);
+}
+
+.add_task > input::placeholder {
+  font-weight: 600;
+}
+
+.add_task > input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.add_task > button {
+  padding: 0.5rem 0.75rem;
+  background: #84cc16;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #f4f4f5;
+}
