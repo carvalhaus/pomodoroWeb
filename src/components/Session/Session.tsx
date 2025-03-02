@@ -48,7 +48,9 @@ function Session() {
           <Badge count={count + 1} />
         </div>
 
-        <Timer />
+        <div className="content_item timer">
+          <Timer count={count} setCount={setCount} />
+        </div>
       </div>
     </section>
   );
